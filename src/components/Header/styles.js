@@ -10,15 +10,18 @@ export const Wrapper = styled.View`
 export const Container = styled.View`
   flex: 1;
   flex-direction: row;
+  padding: 20px 20px 20px 10px;
+  align-items: center;
   justify-content: space-between;
-  padding: 20px;
 `;
+
+export const LogoContainer = styled.TouchableOpacity``;
 
 export const Logo = styled.Image.attrs({
   source: logo,
   resizeMode: 'cover',
 })`
-  width: 190px;
+  width: 200px;
   height: 25px;
 `;
 
@@ -40,7 +43,4 @@ export const ItemCount = styled.Text`
 export const BasketContainer = styled.TouchableOpacity`
   width: 24px;
   height: 24px;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex: 1;
 `;

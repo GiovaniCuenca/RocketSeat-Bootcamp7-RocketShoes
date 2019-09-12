@@ -38,7 +38,7 @@ export const ProductPrice = styled.Text`
   margin-top: 5px;
 `;
 
-export const ProductDelete = styled.View`
+export const ProductDelete = styled.TouchableOpacity`
   padding: 6px;
 `;
 
@@ -50,9 +50,10 @@ export const ProductControls = styled.View`
   min-width: 55px;
   border: 2px solid #fff;
   align-items: center;
+  margin-bottom: 5px;
 `;
 
-export const ProductControlButton = styled.View``;
+export const ProductControlButton = styled.TouchableOpacity``;
 
 export const ProductAmount = styled.TextInput.attrs({
   readonly: true,
@@ -101,4 +102,18 @@ export const OrderText = styled.Text`
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
+`;
+
+export const EmptyContainer = styled.View`
+  margin: 10px 0px;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const EmptyText = styled.Text`
+  font-size: 25px;
+  font-weight: bold;
+  margin: 25px 0px 20px 0px;
+  text-align: center;
+  color: #0f1a1c;
 `;
